@@ -4,4 +4,6 @@
   <%= text_field_tag :zipcode %>
   <%= submit_tag "Search!" %>
 <% end %>
-<%= @resp.body if @resp %>
+<% @venues.each do |venue| %>
+<%= venue.name %>
+<% end %>
